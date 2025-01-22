@@ -10,6 +10,13 @@
  */
 function countProperties(obj) {
   // TODO
+  let count = 0;
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      count = count + 1;
+    }
+  }
+  return count;
 }
 
 export { countProperties };
